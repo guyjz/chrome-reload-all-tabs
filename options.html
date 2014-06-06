@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Reload All Tabs - Options</title>
+		<style>
+			body{ font-family: Helvetica, arial, sans-serif; zoom:1.25; }
+			
+			div#headerDiv{ text-align: center; background: #E4EBF3; padding-left: 50px; padding-right: 50px; font-size: 15pt; margin-bottom: 10px }
+			div#saveBtnDiv{ text-align: right; background: #E4EBF3; margin-top: 10px }
+			
+			div.optionDiv{ font-size: 10pt }
+		</style>
+		<script type="text/javascript" src="js/options.js"></script>
+	</head>
+	<body>
+		<center>
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr align="left">
+					<td>
+						<div id="headerDiv">Reload All Tabs - Options</div>
+						<div class="optionDiv">
+							Default Button Action:
+							<br />
+							<label><input type="radio" name="buttonAction" id="oneWin" checked="checked"/>Reload tabs in current window only.</label>
+							<br />
+							<label><input type="radio" name="buttonAction" id="allWin" />Reload tabs in all windows.</label>
+							<br />
+							<label><input type="radio" name="buttonAction" id="menu" />Show Menu with options.</label>
+							<hr size="1" color="#E4EBF3" />
+							Right-Click Context Menu:
+							<br />
+							<label><input type="checkbox" id="mainContext" />Show 'Reload All Tabs'</label>
+							<br />
+							<label><input type="checkbox" id="winContext" />Show 'Reload All Windows'</label>
+							<br />
+							<label><input type="checkbox" id="pinContext" />Show 'Reload All Pinned Tabs'</label>
+							<hr size="1" color="#E4EBF3" />
+							<label><input type="checkbox" id="dontsupport" />I don't want to support you</label>
+						</div>
+						<div id="saveBtnDiv"><button id="save">Save and Close</button></div>
+					</td>
+				</tr>
+			</table>
+		</center>
+	</body>
+</html>
